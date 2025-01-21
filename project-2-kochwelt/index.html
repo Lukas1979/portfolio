@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+
+    <link rel="stylesheet" href="cs/kochwelt1.css">
+    <link rel="stylesheet" href="cs/kw_part1.css">
+    <link rel="stylesheet" href="cs/kw_menu_hidden.css">
+    <link rel="stylesheet" href="cs/kw_part2.css">
+    <link rel="stylesheet" href="cs/contakt.css">
+    <link rel="stylesheet" href="cs/kw_impressum.css">
+
+    <link rel="stylesheet" href="cs/kw_responsive_p1.css">
+    <link rel="stylesheet" href="cs/contakt_responsive.css">
+
+
+    <script src="js/kochwelt.js"></script>
+    <script src="js/kw_part1.js"></script>
+    <script src="js/kw_part2.js"></script>
+    <script src="js/kw_part3.js"></script>
+    <script src="js/kw_part4.js"></script>
+    <script src="js/kw_part5.js"></script>
+    <script src="js/kw_part6.js"></script>
+    <script src="js/kw_part7.js"></script>
+
+</head>
+
+<body onload="part1()">
+
+    <div class="part1-menu" onclick="backHH()">
+
+        <header class="hR">
+            <img src="img/logo.png" alt="" onclick="part1(), stopBubb(event), backHH()">
+
+            <div class="menu-header">
+
+                <span>
+                    <div class="mH-0" onclick="part1(), stopBubb(event)">Start</div>
+                    <div style="margin-left: 16px" class="mH-1" onclick="part6(), stopBubb(event)">Rezept des Tages
+                    </div>
+                    <div style="margin-left: 16px" class="mH-2" onclick="part3(), stopBubb(event)">Kontakt</div>
+                    <div style="margin-left: 16px" class="mH-3" onclick="part4(), stopBubb(event)">Impressum</div>
+                </span>
+
+                <div class="menu-bar d-none" onclick="menuResponsive(), stopBubb(event)">
+                    <img src="img/bar.svg" alt="">
+                    <div class="menu-bar-green d-none"><img src="img/bar_green.svg" alt=""></div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <div class="centerContent"> <div id="getPart" class="getPart-class"></div> </div>
+
+
+        <footer class="hR">
+            <img src="img/logo.png" alt="">
+
+            <div class="links-footer">
+                <img src="img/facebook.png" alt="" onclick="facebookL()">
+                <img src="img/instagram.png" alt="" onclick="instagramL()">
+                <img src="img/twitter.png" alt="" onclick="twitterL()">
+            </div>
+        </footer>
+
+        <div class="menu-hidden" id="menu_hidden" onclick="stopBubb(event)">
+
+            <div class="menu-H">
+
+                <div class="mHH-0 mHH" style="margin-bottom: 40px" onclick="backHH(), stopBubb(event)">
+                    <h3> zurück </h3>
+                </div>
+                <div class="mHH-1 mHH" onclick="part1(), stopBubb(event), backHH()"> Start </div>
+                <div class="mHH-2 mHH" onclick="part6(), stopBubb(event), backHH()"> Rezept des Tages </div>
+                <div class="mHH-3 mHH" onclick="part3(), stopBubb(event), backHH()"> Kontakt </div>
+                <div class="mHH-4 mHH" onclick="part4(), stopBubb(event), backHH()">Impressum </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

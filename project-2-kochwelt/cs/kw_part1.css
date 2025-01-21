@@ -1,0 +1,143 @@
+.centerContent {
+    min-height: calc(100vh - 156px);
+    box-shadow: #ccc8caff 0px 14px 20px -5px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getPart-class {
+    width: -webkit-fill-available;
+    margin-top: 26px;
+}
+
+.div1 {
+    background-color: #ffffffff;
+}
+
+.div2 {
+    background-color: #ccc8caff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 8vw;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    position: relative;
+}
+
+.div2-img {
+
+    object-fit: cover;
+    width: 320px;
+    height: 206px;
+    border-radius: 12px;
+    transition: transform 120ms;
+}
+
+.div2-img:hover {
+   transform:scale(1.03);
+   cursor: pointer;
+}
+
+.div3 {
+    background-color: #ffffffff;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: #038003ff;
+    width: 160px;
+    height: 34px;
+    border-radius: 4px;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px #038003ff;
+}
+
+.div3>img {
+    object-fit: cover;
+    width: 380px;
+    height: 266px;
+    border-radius: 12px;
+    margin-right: 8%;
+    margin-left: 2%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tipp {
+    width: 64%;
+    margin-left: 8%;
+    margin-right: 2%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tipp>h3 {
+    margin-top: 0;
+}
+
+.div1>img {
+    object-fit: cover;
+    width: 380px;
+    height: 266px;
+    border-radius: 12px;
+    margin-left: 8% ;
+    margin-right: 2%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    transition: transform 120ms;
+}
+
+.div1>img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.p1-croiss {
+    margin-right: 8%;
+    margin-left: 2%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.p1-croiss>h3 {
+    margin-top: 0;
+}
+
+.div2-comment {
+    height: 76px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-of-dishes {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+}
+
+.description-of-dishes b {
+    margin-top: 6px;
+}

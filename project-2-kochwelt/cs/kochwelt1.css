@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../img/fonts/raleway/raleway.ttf') format('truetype');
+}
+
+body {
+    color: #241f1dff;
+    margin: 0;
+    font-family: "MyWebFont", sans-serif;
+    overflow-y: scroll;
+}
+
+.hR {
+    padding-left: calc((100% - 1488px) / 2);
+    padding-right: calc((100% - 1488px) / 2);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+
+/* ------------------------- header ------------------------- */
+
+.d-none {
+    display: none;
+}
+
+.menu-bar {
+    position: relative;
+}
+
+.menu-bar-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-bar>img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu-bar-green>img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu-bar:hover {
+    .menu-bar-green {
+        display: flex;
+    }
+
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+header {
+    height: 78px;
+    background-color: #ffffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>img {
+    height: 52px;
+    margin-left: 8%;
+}
+
+header>img:hover {
+    cursor: pointer;
+}
+
+.menu-header {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    margin-right: 8%;
+}
+
+.menu-header>span {
+    display: flex;
+}
+
+.mH-0,
+.mH-1,
+.mH-2,
+.mH-3 {
+    border-bottom: 3px solid #ffffffff;
+}
+
+.mH-0:hover {
+    border-bottom: 3px solid #038003ff;
+    cursor: pointer;
+}
+
+.mH-1:hover {
+    border-bottom: 3px solid #038003ff;
+    cursor: pointer;
+}
+
+.mH-2:hover {
+    border-bottom: 3px solid #038003ff;
+    cursor: pointer;
+}
+
+.mH-3:hover {
+    border-bottom: 3px solid #038003ff;
+    cursor: pointer;
+}
+
+
+/* ------------------------- footer ------------------------- */
+
+
+footer {
+    height: 78px;
+    background-color: #242224ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer>img {
+    filter: invert(100%);
+    height: 52px;
+    margin-left: 8%;
+}
+
+.links-footer {
+    margin-right: 8%;
+    display: flex;
+}
+
+.links-footer>img {
+    height: 35px;
+    width: 35px;
+    margin-left: 22px;
+    height: 35px;
+    width: 35px;
+    margin-top: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.links-footer>img:hover {
+    cursor: pointer;
+    margin-top: -3px;
+    padding-bottom: 6px;
+}
