@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 24px;
+    font-family: "Raleway", serifenlos;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-block-end: 0.08em;
+}
+
+.sakura {
+    margin-top: 11vh;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #9e0808ff;
+}
+
+h3 {
+    font-family: "Economica", serifenlos;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.section-sakura-ramen {
+    background-image: url(./img/hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.sakura-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.sakura-logo-box {
+    margin-left: 11%;
+}
+
+
+.menu {
+    margin-right: 11%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu-hover:hover {
+    text-decoration: underline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone {
+    width: 28px;
+    height: 28px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.tel-button {
+    padding: 9px;
+    background-color: #9e0808ff;
+
+    border-radius: 11px;
+    border: 2px solid;
+    display: flex;
+}
+
+.tel-numbers {
+    padding-right: 7px;
+    margin-top: -2px;
+}
+
+.tel-button:hover {
+    background-color: rgb(200, 8, 8);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+    align-items: center;
+}
+
+.section-how-to-order {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.section-how-to-order h2 {
+
+    margin-block-start: 0px;
+    margin-block-end: 64px;
+    text-align: center;
+}
+
+.how-to-order-icons {
+    width: 128px;
+    height: 128px;
+}
+
+.how-to-order-123 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+}
+
+.how-to-order-123 h3 {
+    margin-block-start: 16px;
+    margin-block-end: 0px;
+}
+
+.how-to-order-box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-our-menu {
+    background-image: url(img/section_our_menu_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.our-menu {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.our-menu h2 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-align: center;
+}
+
+.food-img {
+    width: 352px;
+    height: 352px;
+}
+
+.food-container {
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.food-description h3 {
+    color: black;
+    margin-block-start: 0px;
+    margin-block-end: 8px;
+    margin-inline-start: 8px;
+}
+
+.food-description {
+    color: #665d54ff;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 72px;
+}
+
+.table {
+    border-spacing: 8px;
+}
+
+.price {
+    padding-left: 172px;
+}
+
+.food-container2 {
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    justify-content: end;
+}
+
+.food-description2 {
+    color: #665d54ff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.food-description2 h3 {
+    color: black;
+    margin-block-start: 0px;
+    margin-block-end: 8px;
+    margin-inline-start: 8px;
+}
+
+.price2 {
+    padding-left: 180px;
+    padding-right: 80px;
+}
+
+.section4 h2 {
+    margin-block-start: 0px;
+    margin-block-end: 8px;
+}
+
+.section4 {
+    padding-top: 120px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.gmaps {
+    width: 100%;
+    height: 70vh;
+}
+
+.map-marker {
+    width: 30px;
+    height: 30px;
+    padding-right: 4px;
+    margin-bottom: -5px;
+}
+
+footer {
+    height: 124px;
+    background-color: black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-sakura {
+    height: 44px;
+    padding-left: 11%;
+}
+
+.footer-right {
+    padding-right: 11%;
+    display: flex;
+}
+
+.footer-3-logo {
+    height: 40px;
+    width: 40px;
+    padding-left: 16px;
+}
+
+.footer-3-logo:hover {
+    opacity: 0.7;
+}

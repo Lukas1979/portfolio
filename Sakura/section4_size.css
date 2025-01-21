@@ -1,0 +1,29 @@
+@media (max-width: 635px) {
+
+    .section4 h2 {
+        font-size: 60px;
+    }
+
+    .section4 {
+        padding-top: 60px;
+        padding-bottom: 34px;
+    }
+
+    .address {
+        font-size: 18px;
+    }
+
+    .map-marker {
+        width: 21px;
+        height: 21px;
+        padding-right: 3px;
+        margin-bottom: -4px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .section4 h2 {
+        font-size: 40px;
+    }
+}

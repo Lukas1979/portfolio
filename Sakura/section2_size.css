@@ -1,0 +1,94 @@
+@media (max-width: 1050px) {
+
+    .section-how-to-order {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .section-how-to-order {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-how-to-order h2 {
+        font-size: 60px;
+        margin-block-end: 32px;
+    }
+
+    .how-to-order-icons {
+        width: 80px;
+        height: 80px;
+    }
+
+    .how-to-order-123 h3 {
+        margin-block-start: 8px;
+        font-size: 42px;
+    }
+
+    .how-to-order-123 {
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section-how-to-order {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section-how-to-order h2 {
+        font-size: 46px;
+        margin-block-end: 20px;
+    }
+
+    .how-to-order-icons {
+        width: 60px;
+        height: 60px;
+    }
+
+    .how-to-order-123 h3 {
+        margin-block-start: 6px;
+        font-size: 32px;
+    }
+
+    .how-to-order-123 {
+        width: 150px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .section-how-to-order h2 {
+        font-size: 36px;
+        margin-block-end: 15px;
+    }
+
+    .how-to-order-icons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .how-to-order-123 h3 {
+        font-size: 24px;
+    }
+
+    .how-to-order-123 {
+        width: 90px;
+    }
+
+    .section-how-to-order {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+

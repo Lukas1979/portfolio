@@ -1,0 +1,28 @@
+@media (max-width: 710px) {
+    .footer-sakura {
+        height: 32px;
+        padding-left: 11%;
+    }
+}
+
+@media (max-width: 570px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer-sakura {
+        padding-left: 0;
+    }
+    
+    .footer-right {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .gmaps {
+        height: 40vh;        
+    }
+}
