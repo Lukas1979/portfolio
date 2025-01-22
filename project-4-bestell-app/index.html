@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellApp</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon_32x32.png">
+
+    <link rel="stylesheet" href="css/bestell_app.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/b_a_respon.css">
+
+    <script src="js/bestell_app.js"></script>
+    <script src="js/b_a_basket.js"></script>
+    <script src="js/b_a_templates.js"></script>
+    <script src="js/b_a_text.js"></script>
+
+</head>
+
+<body onload="start()">
+
+    <div id="body-start"></div>
+
+    <div id="headerTemplates"></div>
+
+
+    <div class="content-menu hR">
+
+        <div class="content">
+
+            <img src="img/tavern3.jpg" alt="">
+
+            <div class="div2">
+
+                <div class="logo"><img src="img/palm5.jpg" alt=""></div>
+
+                <h2>Restaurant Petra Votsalo</h2>
+                <span>Bewertung ( 4,2 von 5 Sternen )</span>
+
+                <div class="category-food">
+
+                    <img src="img/palm2.png" alt="">
+
+                    <h3 class="our-menu">Unser Menü:</h3>
+                    <div class="category1" onclick="scrollToPlace('scroll-pasta')">
+                        <h3>Pasta</h3>
+                    </div>
+                    <div class="category2" onclick="scrollToPlace('scroll-pizza')">
+                        <h3>Pizza</h3>
+                    </div>
+                    <div class="category3" onclick="scrollToPlace('scroll-water')">
+                        <h3>Getränke</h3>
+                    </div>
+
+                </div>
+
+
+                <div id="scroll-pasta"></div>
+                <div class="img-css"><img src="img/pasta.jpg" alt=""></div>
+                <div class="img-name">
+                    <h3>Pasta</h3>
+                </div>
+
+
+                <div id="pastaTemplates"></div>
+
+
+                <div id="scroll-pizza"></div>
+                <div class="img-css"><img src="img/pizza2.jpg" alt=""></div>
+                <div class="img-name">
+                    <h3>Pizza</h3>
+                </div>
+
+
+                <div id="pizzaTemplates"></div>
+
+
+                <div id="scroll-water"></div>
+                <div class="img-css"><img src="img/water2.jpg" alt=""></div>
+                <div class="img-name">
+                    <h3>Getränke</h3>
+                </div>
+
+
+                <div id="waterTemplates"></div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-div" id="menuDiv">
+
+            <div class="menu-title">
+                <h2>Warenkorb</h2>
+            </div>
+
+
+            <div class="basket-logo">
+                <img src="img/exit5.png" alt="" onclick="bodyStart()">
+            </div>
+
+
+            <div id="acceptedBasket" class="accepted-basket"></div>
+
+            <div class="choice-sum" id="choiceSum">
+
+
+                <div id="choiceTemplates"></div>
+
+
+                <div class="sum">
+
+                    <div id="sumTemplates"></div>
+
+                    <br>
+
+                    <div class="delivery-text">
+                        <div class="sum123 delivery" style="color: #97999cff; width: fit-content"
+                            onclick="deliveryOff()" id="withoutDelivery">
+                            <div id="hover1"> Ohne Lieferung </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery-text">
+                        <div class="sum123 delivery" style="color: #97999cff; width: fit-content" onclick="deliveryOn()"
+                            id="withDelivery">
+                            <div id="hover2"> Mit Lieferung </div>
+                        </div>
+                    </div>
+
+
+                    <div class="road-car">
+                        <div class="road" id="roadI"><img src="img/road2.png" alt=""></div>
+                        <div class="car" id="carI" onclick="carI()"><img src="img/car2.png" alt=""></div>
+                    </div>
+
+                </div>
+
+
+                <div class="applyBasket2">
+                    <div class="applyBasket" onclick="applyBasketChoice()">
+                        <h3>Annehmen</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <img src="img/logo23.png" alt="">
+    </footer>
+
+</body>
+
+</html>

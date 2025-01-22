@@ -1,0 +1,129 @@
+.object-fit {
+    object-fit: scale-down;
+}
+
+@media (max-width: 448px) {
+
+    .titel {
+        font-size: 33px;
+    }
+
+    .fotos {
+
+        margin-top: 76px;
+    }
+
+    footer {
+
+        height: 7vh;
+    }
+
+    .div-center {
+
+        height: 87vh;
+    }
+
+    .footer-img {
+
+        height: 30px;
+        width: 74px;
+    }
+
+    header {
+        height: 6vh;
+    }
+
+    .fotogram-ikon {
+        height: 29px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .fenster2 {
+        width: 360px;
+        height: 578px;
+    }
+
+    .bild-f2 {
+
+        left: 12px;
+        width: 336px;
+        height: 336px;
+        top: 119px;
+    }
+
+    .arrow {
+        height: 26px;
+        width: 26px;
+    }
+
+    .bild-number {
+
+        right: 151px;
+        font-size: 18px;
+    }
+
+    .arrow-div-right {
+
+        right: 56px;
+    }
+
+    .arrow-div-left {
+
+        left: 56px;
+    }
+
+    .bild {
+        width: 126px;
+        height: 126px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .fenster2 {
+        width: 272px;
+        height: 496px;
+    }
+
+    .bild-f2 {
+
+        left: 7px;
+        width: 258px;
+        height: 258px;
+        top: 115px;
+    }
+
+    .bild {
+        width: 112px;
+        height: 112px;
+    }
+
+    .arrow-div-right {
+
+        right: 36px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .arrow-div-left {
+
+        left: 36px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .arrow {
+        height: 20px;
+        width: 20px;
+    }
+
+    .bild-number {
+        right: 114px;
+        font-size: 16px;
+    }
+
+
+}
+

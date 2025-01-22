@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="icon" type="image/x-icon" href="img/pokeball_fav.png">
+
+    <link rel="stylesheet" href="css/poke.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/bouncing_dots.css">
+    <link rel="stylesheet" href="css/added_card.css">
+    <link rel="stylesheet" href="css/progress_bars.css">
+    <link rel="stylesheet" href="css/nav_bar.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+    <link rel="stylesheet" href="css/page1.css">
+
+</head>
+
+<body onload="start(), page1start()">
+    <header>
+        <span>Pokedex
+
+            <div class="arrow" onclick="arrowClick(), propOff(event)">
+                <img src="img/arrow1.png" alt="" id="pageArrow">
+            </div>
+
+        </span>
+
+        <div class="bouncing-dots" id="loading_dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="start-end-bar1" id="start_end_bar1">
+            <div class="s-e" id="s-e">1000 - 1010</div>
+        </div>
+
+        <div class="input-div" id="input_div">
+            <input onfocus="onFocusHideAddedCard()" class="filter" type="text" id="pokemonSearch"
+                placeholder="enter a name" aria-label="Pokémon suchen" autocomplete="off" />
+        </div>
+    </header>
+
+
+    <div class="main-content to-center" id="main_content" onclick="mainContentClick()" style="-webkit-tap-highlight-color: transparent;">
+
+
+        <div class="main-content-inside section1-outside" id="page1">
+
+            <div class="section1" id="section1"></div>
+
+            <div class="arrows">
+
+                <div class="arrow20" id="arrow20">
+                    <img src="img/arrow20_2.png" alt="" onclick="loadMore40()">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="main-content-inside display-none" id="page2">
+
+
+            <div class="to-center sektions s1 hp-cd">
+                <div class="hide-pokemon" id="hide_pokemon" onclick="zoomCard(), propOff(event)"
+                    style="cursor: pointer;"></div>
+                <div class="carousel-div">
+                    <div class="carousel">
+                        <div class="carousel-inner" id="carouselInner" role="list">
+                            <!-- Pokémon-Karten werden hier dynamisch eingefügt -->
+                        </div>
+                    </div>
+                </div>
+                <div id="arrows_page2_1" class="arrow-left"><img src="img/arr3.png" alt="" class="arrows-page2" onclick="rotateCarousel('left'), clickOnNav('l1'), propOff(event)"></div>
+                <div id="arrows_page2_2" class="arrow-right"><img src="img/arr2.png" alt="" class="arrows-page2" onclick="rotateCarousel('right'), clickOnNav('r1'), propOff(event)"></div>
+
+            </div>
+
+
+            <div class="added-card-area" id="added_card_area"></div>
+
+
+            <div class="to-center sektions buttons-block">
+                <div onclick="propOff(event)" class="center-nav" id="center_nav">
+                    <div>
+                        <div class="nav-bar1" id="nav_bar1">
+
+                            <div onclick="onClickButtons(1), refreshButtons(1), propOff(event)" class="b1" id="b1">1</div>
+                            <div onclick="onClickButtons(2), refreshButtons(2), propOff(event)" class="b1" id="b2">2</div>
+                            <div onclick="onClickButtons(3), refreshButtons(3), propOff(event)" class="b1" id="b3">3</div>
+                            <div onclick="onClickButtons(4), refreshButtons(4), propOff(event)" class="b1" id="b4">4</div>
+                            <div onclick="onClickButtons(5), refreshButtons(5), propOff(event)" class="b1" id="b5">5</div>
+                            <div onclick="onClickButtons(6), refreshButtons(6), propOff(event)" class="b1" id="b6">6</div>
+                            <div onclick="onClickButtons(7), refreshButtons(7), propOff(event)" class="b1" id="b7">7</div>
+                            <div onclick="onClickButtons(8), refreshButtons(8), propOff(event)" class="b1" id="b8">8</div>
+                            <div onclick="onClickButtons(9), refreshButtons(9), propOff(event)" class="b1" id="b9">9</div>
+                            <div onclick="onClickButtons(10), refreshButtons(10), propOff(event)" class="b1" id="b10">10</div>
+
+                        </div>
+                        <div class="nav-bar2" id="nav_bar2">
+
+                            <div class="less1" id="less1">&lt&lt</div>
+                            <div class="l1" id="l1">&lt</div>
+                            <div class="c1" id="c1">+</div>
+                            <div class="r1" id="r1">></div>
+                            <div class="more1" id="more1">>></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="to-center"><img src="img/water.png" alt="" class="src"></footer>
+</body>
+
+<script src="js/poke_dex.js"></script>
+<script src="js/search_bar.js"></script>
+<script src="js/create_pokemon_cards.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/evo_chain.js"></script>
+<script src="js/progress_bars.js"></script>
+<script src="js/buttons.js"></script>
+<script src="js/nav_bar.js"></script>
+<script src="js/page1.js"></script>
+
+</html>

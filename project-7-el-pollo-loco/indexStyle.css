@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'Zabars';
+    src: url('fonts/zabars.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rocknroll';
+    src: url('fonts/rocknrollone.ttf') format('truetype');
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background-image: url('img/desert3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    font-family: 'Zabars', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    flex-direction: column;
+}
+
+.portrait {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #dcd3d3;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.canvas-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+}
+
+.start {
+    position: absolute;
+    right: 4%;
+    top: 27px;
+    color: #f9c91f;
+    font-size: 32px;
+    transition: scale 0.1s ease-in-out;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+}
+
+.start span {
+    width: max-content;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out,
+        scale 0.1s ease-in-out;
+}
+
+.start span {
+    z-index: 2;
+}
+
+.start img {
+    z-index: 1;
+}
+
+.cloud.moved1 {
+    right: 233px;
+}
+
+.cloud.moved2 {
+    right: 113px;
+}
+
+.cloud.moved3 {
+    right: -4px;
+}
+
+.cloud.moved-start {
+    right: -160px;
+}
+
+.start span:hover {
+    scale: 1.05;
+}
+
+.cloud {
+    position: absolute;
+    top: -28px;
+    right: -4px;
+    width: 126px;
+    height: 73px;
+    transition: right 0.9s ease-in-out;
+}
+
+.sign-div {
+    position: absolute;
+    left: 45%;
+    bottom: 13%;
+    width: 267px;
+    height: 158px;
+    transition: opacity 0.9s ease-in-out;
+    opacity: 0;
+}
+
+.sign {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 267px;
+    height: 158px;
+}
+
+.key {
+    position: absolute;
+    left: 42px;
+    bottom: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: scale 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Rocknroll', sans-serif;
+}
+
+.s1 {
+    transform: rotate(-1deg);
+}
+
+.s4 {
+    transform: rotate(1deg);
+}
+
+.window {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 73%;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.9s ease-in-out;
+    display: none;
+}
+
+.window img {
+    width: 100%;
+    height: 100%;
+}
+
+.win-text {
+    width: 76%;
+    height: 53%;
+    position: absolute;
+    transform: translateY(16%);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    font-size: 13px;
+    font-family: 'Rocknroll', sans-serif;
+}
+
+.restart-div {
+    position: absolute;
+    font-size: 32px;
+    color: rgb(234, 194, 14);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: restart 6s ease-in-out infinite;
+    transition: opacity 2s ease-in-out;
+    bottom: 9%;
+    right: 3%;
+}
+
+.restart-div span {
+    cursor: pointer;
+}
+
+@keyframes restart {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.restart {
+    width: 200px;
+    height: 200px;
+}
+
+.restart-div span:nth-of-type(1) {
+    position: absolute;
+    left: 57px;
+    top: 24px;
+    transform: rotate(10deg);
+    transition: scale 0.1s ease-in-out;
+}
+
+.restart-div span:nth-of-type(1):hover,
+.restart-div span:nth-of-type(2):hover {
+    scale: 1.05;
+}
+
+.restart-div span:nth-of-type(2) {
+    position: absolute;
+    left: 40px;
+    top: 67px;
+    transform: rotate(7.5deg);
+    transition: scale 0.1s ease-in-out;
+}
+
+.restart-div span:nth-of-type(3) {
+    position: absolute;
+    left: 86px;
+    top: 122px;
+    transform: rotate(-5deg);
+    color: rgb(215, 178, 12);
+    font-size: 30px;
+}
+
+.lr-div {
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    display: flex;
+}
+
+.left,
+.right {
+    width: 70px;
+    height: 60px;
+    position: relative;
+}
+
+.left-img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    position: absolute;
+    left: calc(60% - 15px);
+    bottom: 5%;
+}
+
+.right-img {
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    position: absolute;
+    left: calc(40% - 15px);
+    bottom: 5%;
+}
+
+.jb-div {
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+    display: flex;
+}
+
+.jump,
+.bottle {
+    width: 70px;
+    height: 60px;
+    position: relative;
+}
+
+.jump-img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(270deg);
+    position: absolute;
+    left: calc(60% - 15px);
+    bottom: 5%;
+}
+
+.throw-bottle {
+    width: 30px;
+    height: 30px;
+}
+
+.bottle-img {
+    width: 39px;
+    height: 32px;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+.throw-bottle-button {
+    position: absolute;
+    left: calc(40% - 15px);
+    bottom: -3%;
+}
+
+.sp-sc {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    display: flex;
+    transform: translateX(-50%);
+    gap: 30px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    scale: 0.9;
+}
+
+.speaker img:nth-of-type(2) {
+    width: 30px;
+    height: 36px;
+    cursor: pointer;
+    transform: translateY(-7px);
+    opacity: 0.5;
+    transition: scale 0.1s ease-in-out;
+}
+
+.speaker img:nth-of-type(1):hover+img:nth-of-type(2),
+.speaker img:nth-of-type(2):hover {
+    scale: 1.1;
+}
+
+.speaker img:nth-of-type(1) {
+    width: 63px;
+    height: 31px;
+    cursor: pointer;
+    transform: translateY(-7px);
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 3;
+    position: absolute;
+    top: 4px;
+    left: -18px;
+}
+
+.screen img {
+    width: 27px;
+    height: 33px;
+    cursor: pointer;
+    transform: translateY(-4px);
+    opacity: 0.5;
+}
+
+.screen img:hover {
+    scale: 1.1;
+}
+
+.speaker,
+.screen {
+    cursor: pointer;
+}
+
+
+
+
+
+

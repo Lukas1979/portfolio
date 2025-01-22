@@ -1,0 +1,415 @@
+/* -------------------------------------------- */
+
+@media (min-height: 620px) {
+
+    @media (max-width: 1140px) {
+
+        .window-summary {
+            width: calc(1208px - 57px);
+        }
+
+        .main {
+            width: calc(1208px* 0.80 - 46px + 2px);
+        }
+    }
+
+    @media (max-width: 1097px) {
+
+        .window-summary {
+            scale: 0.70;
+            transform: translateX(-17px);
+        }
+
+        .main {
+            width: 795px;
+            height: calc(928px * 0.70 + 1px);
+            transform: translate3d(83px, 93px, 0px);
+            top: 0px;
+            left: calc((100% / 2) - (795px / 2));
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 967px) {
+
+        .window-summary {
+            scale: 0.66;
+        }
+
+        .main {
+            width: 715px;
+            height: calc(928px * 0.66 + 1px);
+            left: calc((100% / 2) - (715px / 2));
+        }
+
+        .window-summary {
+            transform: translateX(-41px);
+        }
+    }
+
+    @media (max-width: 888px) {
+
+        .main {
+            height: 719px;
+            width: 569px;
+            left: calc((100% / 2) - (569px / 2));
+        }
+
+        .window-summary {
+            width: 1208px;
+            height: 1110px;
+        }
+
+        .add-task {
+            left: 325px;
+            top: -17px;
+            scale: 0.8;
+        }
+
+        .title-description {
+            left: 247px;
+            top: 52px;
+        }
+
+        .due-prio {
+            left: 247px;
+            top: 452px;
+        }
+
+        .field-required {
+            left: 247px;
+            top: 1033px;
+            width: 89px;
+        }
+
+        .buttons {
+            left: 379px;
+            top: 1024px;
+        }
+
+        .separator {
+            height: 616px;
+            left: 464px;
+            top: 678px;
+            transform: rotate(90deg);
+            background-color: #f5f6f7;
+        }
+
+        .circles-contacts-div {
+            left: 145px;
+            top: 279px;
+        }
+
+        .calendar-container {
+            left: 432px;
+            top: 562px !important;
+        }
+
+        .calendar-container2 {
+            transform: translateX(-54px) !important;
+        }
+
+        .new-div-for-subtasks {
+            height: 113px;
+            bottom: -125px;
+        }
+
+        .task-added-to-board2 {
+            left: calc((100% / 2) - 603px / 2);
+            bottom: calc((100% / 2) - -36px / 2);
+        }
+    }
+
+    @media (max-width: 742px) {
+
+        .window-summary {
+            width: 831px;
+            transform: translateX(-141px);
+        }
+
+        .main {
+            width: 427px;
+            left: calc((100% / 2) - (427px / 2));
+        }
+
+        .task-added-to-board2 {
+            left: calc((100% / 2) - 219px / 2);
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        .main {
+            transform: translate3d(0px, 93px, 0px);
+        }
+
+        .mobile-add-task-outer {
+            border: 1px solid #D1D1D1;
+            transform: translateY(96px) translateX(143px);
+            width: fit-content;
+            height: 664px;
+            border-radius: 10px;
+        }
+
+        .mobile-add-task {
+            height: 644px;
+            width: 639px;
+            position: relative;
+            overflow-y: auto;
+            overflow-x: hidden;
+            transform: translateY(10px);
+            scrollbar-color: #a8a8a8ff #f5f6f7;
+            scrollbar-width: thin;
+        }
+
+        .main {
+            height: 564px;
+        }
+
+        .add-task {
+            top: 5px;
+            scale: 0.9;
+        }
+
+        .title-description {
+            top: 18px;
+            left: 100px;
+        }
+
+        .due-prio {
+            top: 424px;
+            left: 100px;
+        }
+
+        .separator {
+            top: 750px;
+            background-color: #f5f6f7;
+        }
+
+        .buttons {
+            left: 381px;
+            top: 796px;
+        }
+
+        .field-required {
+            left: 248px;
+            top: 804px;
+            width: 89px;
+        }
+
+        .calendar-container {
+            top: 534px !important;
+        }
+
+        .calendar-container2 {
+            transform: translateX(-141px) !important;
+        }
+
+        .new-div-for-subtasks {
+            height: 184px;
+            bottom: -197px;
+        }
+
+        .task-added-to-board2 {
+            bottom: calc((100% / 2) - -99px / 2);
+        }
+    }
+
+    @media (max-width: 437px) {
+
+        .main {
+            width: 314px;
+            left: calc((100% / 2) - (314px / 2));
+        }
+
+        .window-summary {
+            transform: translateX(-231px);
+        }
+
+        .mobile-add-task {
+            width: 470px;
+        }
+
+        .mobile-add-task-outer {
+            transform: translateY(86px) translateX(232px);
+        }
+
+        .title-description {
+            left: 14px;
+        }
+
+        .due-prio {
+            left: 14px;
+        }
+
+        .calendar-container2 {
+            transform: translateX(-193px) !important;
+        }
+    }
+
+    /* -------------------------------------------- */
+
+    @media (max-width: 600px) {
+
+        @media (max-height: 940px) {
+            @media (min-height: 840px) {
+
+                .main {
+                    height: 658px;
+                }
+
+                .mobile-add-task {
+                    height: 780px;
+                }
+
+                .buttons {
+                    top: 930px;
+                }
+
+                .field-required {
+                    top: 941px;
+                }
+
+                .mobile-add-task-outer {
+                    height: 801px;
+                    transform: translateY(92px) translateX(232px);
+                }
+
+                @media (max-width: 600px) {
+                    @media (min-width: 437.1px) {
+
+                        .mobile-add-task-outer {
+                            transform: translateY(85px) translateX(143px);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-height: 750px) {
+
+            .main {
+                height: 528px;
+            }
+
+            .mobile-add-task {
+                height: 568px;
+            }
+
+            .buttons {
+                top: 722px;
+            }
+
+            .field-required {
+                top: 732px;
+            }
+
+            .mobile-add-task-outer {
+                height: 589px;
+                transform: translateY(96px) translateX(232px);
+            }
+        }
+    }
+
+    /* -------------------------------------------- */
+
+    @media (max-height: 730px) {
+
+        @media (max-width: 600px) {
+
+            .main {
+                height: 519px;
+            }
+
+            .mobile-add-task {
+                height: 560px;
+            }
+
+            .buttons {
+                top: 707px;
+            }
+
+            .field-required {
+                top: 720px;
+            }
+
+            .mobile-add-task-outer {
+                height: 579px;
+                transform: translateY(94px) translateX(142px);
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .main {
+                height: 485px;
+            }
+
+            .window-summary {
+                transform: translatex(-231px) translateY(0px);
+            }
+
+            .mobile-add-task {
+                height: 520px;
+            }
+
+            .buttons {
+                top: 656px;
+            }
+
+            .field-required {
+                top: 666px;
+            }
+
+            .mobile-add-task-outer {
+                height: 539px;
+                transform: translateY(86px) translateX(232px);
+            }
+        }
+    }
+}
+
+/* -------------------------------------------- */
+
+.calendar-container {
+    top: calc(328px - 36px);
+}
+
+@media (min-width: 888.1px) {
+
+    .add-task {
+        top: calc(110px - 50px);
+    }
+
+    .title-description {
+        top: calc(231px - 50px);
+    }
+
+    .separator {
+        top: calc(231px - 50px);
+    }
+
+    .due-prio {
+        top: calc(231px - 50px);
+    }
+
+    .new-div-for-subtasks {
+        height: 148px;
+        bottom: -159px;
+    }
+
+    .buttons {
+        top: calc(793px + 20px);
+    }
+
+    .field-required {
+        top: calc(830px + 20px);
+    }
+}
+
+/* -------------------------------------------- */

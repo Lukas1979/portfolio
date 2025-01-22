@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    background-color: #f5f6f7;
+    justify-content: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+
+main {
+    max-width: 1440px;
+    width: calc(100% - 232px);
+    padding-left: 186px;
+    padding-right: 48px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+main::-webkit-scrollbar {
+    width: 4px;
+    /* Macht die Scrollbar extrem dünn */
+}
+
+
+.title {
+    margin-top: 188px;
+}
+
+@media (max-width: 970px) {
+    .title{
+        font-size: 41px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }

@@ -1,0 +1,260 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fc8200ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(254, 161, 62);
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../logo/Raleway/raleway.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    color: #fc8200ff;
+    background-color: #ffffffff;
+    font-family: 'raleway';
+    -webkit-tap-highlight-color: transparent;
+}
+
+header,
+footer {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #ff8000ff;
+}
+
+.basket-header {
+    height: 36px;
+    width: 36px;
+    filter: invert(100%);
+    margin-left: 6px;
+}
+
+.arrow-header {
+    width: 86px;
+    object-fit: scale-down;
+    filter: invert(100%);
+}
+
+.header-basket {
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    color: #ffffffff;
+}
+
+footer {
+    background-color: #3d3d3dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 50px;
+    opacity: 0.5;
+}
+
+.logo-header {
+    height: 56px;
+    margin-left: 4%;
+}
+
+.content-menu {
+    display: flex;
+}
+
+.content {
+    width: -webkit-fill-available;
+    min-height: 100vh;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    height: 500px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+}
+
+.img-css img {
+    height: 146px;
+}
+
+.img-css {
+    width: -webkit-fill-available;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 32px;
+}
+
+.content h2 {
+    width: -webkit-fill-available;
+    color: #050505ff;
+    margin-left: 4%;
+    margin-top: 13px;
+}
+
+.content span {
+    width: -webkit-fill-available;
+    margin-left: 4%;
+}
+
+.category-food {
+    height: 48px;
+    width: -webkit-fill-available;
+    background-color: #f7f7f2ff;
+    display: flex;
+    align-items: center;
+    color: #97999cff;
+    margin-bottom: -11px;
+    margin-top: 16px;
+    box-shadow: inset -8px 0px 13px -10px rgba(0, 0, 0, 0.65);
+}
+
+.category-food img {
+    margin-left: 10px;
+}
+
+.category-food img {
+    object-fit: scale-down;
+    width: 40px;
+    height: 40px;
+    margin-left: 4%;
+}
+
+.category-food h3 {
+    margin-left: 12px;
+
+}
+
+.category1,
+.category2,
+.category3 {
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.category1:hover,
+.category2:hover,
+.category3:hover {
+    scale: 1.15;
+    color: #75787b;
+}
+
+.eat-div {
+    cursor: pointer;
+    width: -webkit-fill-available;
+    height: 146px;
+    border: 3px solid #e6e6e6ff;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.eat-div:hover {
+    background-color: #ffe6ccff;
+
+    .eat-div-plus {
+        border-bottom: 3px solid #ffe6ccff;
+        border-left: 3px solid #ffe6ccff;
+    }
+}
+
+.img-name {
+    width: -webkit-fill-available;
+    color: #050505ff;
+    margin-bottom: 10px;
+    margin-left: 4%;
+}
+
+.img-name h3 {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.logo {
+    margin-top: -38px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+}
+
+.div2 {
+    width: -webkit-fill-available;
+    box-shadow: inset -8px 0px 13px -10px rgba(0, 0, 0, 0.65);
+    padding-bottom: 46px;
+}
+
+.d-none {
+    display: none;
+}
+
+.eat-div-plus {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: 3px solid #e6e6e6ff;
+    border-left: 3px solid #e6e6e6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eat-div-plus img {
+    width: 20px;
+    height: 20px;
+}
+
+.eat-name {
+    color: #050505ff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.eat-description {
+    color: #050505ff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.eat-price {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hR {
+
+    padding-right: calc((100% - 1536px) / 2);
+    padding-left: calc((100% - 1536px) / 2);
+}
+

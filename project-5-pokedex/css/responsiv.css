@@ -1,0 +1,276 @@
+.hp-cd {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.buttons-block {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1488px) {
+
+    .input-div {
+        right: calc(4vw + ((100% - 1488px) / 2));
+    }
+
+    .arrow {
+        right: calc(40px + ((100% - 1488px) / 2)) !important;
+    }
+}
+
+@media (min-height: 720px) {
+    .main-content {
+        height: calc(100vh - 140px);
+    }
+}
+
+@media (min-height: 837px) {
+
+
+    .section1 {
+        height: calc(410px + ((100vh - 836px) / 2)) !important;
+    }
+}
+
+@media (min-height: 1254px) {
+
+    .section1 {
+        height: 619px !important;
+    }
+
+}
+
+
+/*-----------------------------------*/
+
+
+@media (max-height: 820px) {
+    @media (max-width: 550px) {
+
+
+        .carousel-div {
+            height: 243px;
+        }
+
+        .nav-bar2,
+        .nav-bar2 {
+            height: 33px;
+        }
+    }
+}
+
+
+/*-----------------------------------*/
+
+
+@media (max-width: 640px) {
+
+    :root {
+        --tranZ: 350px;
+    }
+
+    .carousel {
+        width: 145px;
+    }
+
+    .area2 {
+        width: calc(100vw - 50px);
+    }
+
+    .arrow-left {
+        left: calc((100% / 2) - 119px - 42px);
+    }
+
+    .arrow-right {
+        left: calc((100% / 2) + 77px + 44px);
+    }
+}
+
+@media (max-width: 550px) {
+
+    :root {
+        --tranZ: 300px;
+    }
+
+    .carousel-inner .card {
+        width: 120px;
+        height: 170px;
+    }
+
+    .carousel {
+        width: 125px;
+    }
+
+    .s1 {
+        transform: translateY(-10px);
+    }
+
+    .arrow-left {
+        left: calc((100% / 2) - 119px - 19px);
+    }
+
+    .arrow-right {
+        left: calc((100% / 2) + 77px + 22px);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .start-end-bar1 {
+        top: 42px;
+        background-color: #082129ff;
+        left: calc(100vw - 152px);
+    }
+
+    .input-div {
+        top: 5px;
+        left: calc(100vw - 152px);
+    }
+
+    #pokemonSearch {
+        height: 22px;
+    }
+
+    .main-card2 {
+        width: calc(100% - 74px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    :root {
+        --tranZ: 260px;
+    }
+}
+
+@media (max-width: 460px) {
+    .added-card-name {
+        font-size: 19px;
+    }
+
+    .btn-card2 {
+        font-size: 18px;
+    }
+
+    .main-card2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 406px) {
+
+    :root {
+        --tranZ: 220px;
+    }
+
+    .carousel-inner .card {
+        width: 100px;
+        height: 150px;
+    }
+
+    .carousel {
+        width: 105px;
+    }
+
+    .area1 {
+        scale: 0.8;
+        transform: translateY(26px);
+    }
+
+    .arrow-div1,
+    .arrow-div2 {
+        scale: 0.65;
+    }
+
+    .s1 {
+        transform: translateY(12px);
+    }
+}
+
+@media (max-width: 360px) {
+
+    :root {
+        --tranZ: 200px;
+    }
+
+    .carousel-inner .card {
+        width: 95px;
+        height: 145px;
+    }
+
+    .carousel {
+        width: 100px;
+    }
+}
+
+/*-----------------------------------*/
+
+@media (min-width: 406px) {
+    @media (max-height: 834px) {
+
+        .hp-cd {
+            position: absolute;
+            margin-top: 8px;
+            top: 99px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .buttons-block {
+            position: absolute;
+            bottom: 66px;
+            left: calc((100% / 2) - (312px / 2));
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            width: 100%;
+        }
+
+        .added-card-area {
+            position: absolute;
+            top: 425px;
+            left: 0px;
+        }
+    }
+
+    @media (max-height: 794px) {
+
+        .added-card-area {
+            top: 382px;
+        }
+    }
+
+    @media (max-height: 750px) {
+
+        .area1,
+        .area2 {
+            scale: 0.9;
+        }
+
+        .added-card-area {
+            top: 363px;
+        }
+
+        .area2 {
+            transform: translateY(-26px);
+        }
+    }
+
+    @media (max-height: 693px) {
+
+        .buttons-block {
+            bottom: -3px;
+            z-index: 9;
+        }
+
+        .area2 {
+            scale: 0.8;
+            transform: translateY(-45px);
+        }
+    }
+}

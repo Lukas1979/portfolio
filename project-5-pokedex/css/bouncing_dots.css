@@ -1,0 +1,30 @@
+ 
+.bouncing-dots {
+    display: flex;
+    justify-content: space-around;
+    width: 50px;
+    transform: translate3d(12px, -7px, 0px);
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #efedf2ff;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    to {
+        opacity: 0.1;
+        transform: translateY(-20px);
+    }
+}

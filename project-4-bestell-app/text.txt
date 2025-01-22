@@ -1,0 +1,79 @@
+Arte – Pasta
+sempre -immer
+- Spaghettini Adriana
+(Spaghettini an Portweinsauce, italienische Kräuter, frische braune
+Champignons, Rindsfiletstreifen, Zwiebeln, Knoblauch, Olivenöl)
+Fr. 25.50
+
+- Spaghettini al tonno
+(Spaghettini mit Thunfisch, Zwiebeln, Knoblauch, Chili, italienische
+Kräuter, Olivenöl)
+Fr. 19.50
+
+- Spaghetti ai porcini
+(Spaghetti an Steinpilzsauce, Steinpilze, Rahm, italienische Kräuter,
+Weisswein, Olivenöl)
+Fr. 19.50
+
+- Spaghetti al pesto
+(Spaghetti an Basilikumsauce, Basilikumkraut, Pinienkerne gemahlen,
+Knoblauch, Zwiebeln, Parmesan-Käse, Olivenöl)
+Fr. 18.00
+
+- Spaghetti al pomodoro fresco
+(Spaghetti an Tomatensauce, Tomaten, Basilikumkraut, Zwiebeln,
+Knoblauch, Olivenöl)
+Fr. 16.00
+
+- Spaghetti alle verdure
+(Spaghetti mit Grillgemüse, Peperoni, Auberginen, Zuchetti, Zwiebeln,
+Knoblauch, Olivenöl)
+Fr. 19.50
+
+- Spaghetti pancina
+(Spaghetti mit Parmesan-Käse-Sauce, Speck gebraten, italienische Kräuter,
+Zwiebeln, Knoblauch, Olivenöl)
+Fr. 19.50
+
+
+
+
+PIZZA MARGHERITA
+Tomaten, Mozzarella, Oregano	11.90
+PIZZA FUNGHI PORCINI E RUCOLA
+Tomaten, Mozzarella, Steinpilze, Mascarpone, Parmaschinken, Rucola	24.90
+PIZZA ALLA DIAVOLA
+Tomaten, Mozzarella, Peperoni, scharfer Peperoncino	15.90
+PIZZA NAPOLI
+Tomaten, Mozzarella, Sardellen, Kapern	15.90
+PIZZA AI FUNGHI
+Tomaten, Mozzarella, frische Champignons	16.50
+PIZZA ORTOLANA
+Tomaten, Mozzarella, Gorgonzola, Spinat	16.90
+PIZZA PROSCIUTTO
+Tomaten, Mozzarella, Schinken	16.90
+PIZZA SALAME E UOVO
+Tomaten, Mozzarella, Salami, Ei	16.90
+
+
+
+let basketItems = [
+
+    {
+        name: "Spaghettini Adriana",
+        price: 5,
+        itemCount: 5
+    },
+
+    {
+        name: "Spaghettini al tonno",
+        price: 1,
+        itemCount: 10
+    },
+
+    {
+        name: "Spaghetti ai porcini",
+        price: 10,
+        itemCount: 3
+    }
+]

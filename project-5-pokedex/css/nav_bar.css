@@ -1,0 +1,115 @@
+.nav-bar1 {
+    width: 310px;
+    height: 40px;
+    background-color: indigo;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.nav-bar2 {
+    width: 310px;
+    height: 40px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.b1,
+.c1,
+.l1,
+.r1,
+.more1,
+.less1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    margin: 4px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: scale 100ms;
+}
+
+.c1,
+.l1,
+.r1,
+.more1,
+.less1 {
+    width: 40px;
+}
+
+.start-end-bar1 {
+    height: 22px;
+    width: 132px;
+    color: #c0bdc4;
+    position: absolute;
+    top: 25px;
+    left: calc((100% / 2) - 66px);
+    font-size: 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.down {
+    scale: 0.75;
+}
+
+.opacity1 {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.opacity0 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.to-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows-page2 {
+    opacity: 0.5;
+    height: 20px;
+    width: 40px;
+}
+
+.arrow-left {
+    position: absolute;
+    bottom: 0px;
+    left: calc((100% / 2) - 119px - 80px);
+    z-index: 2;
+    transition: opacity 500ms ease-in-out;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    bottom: 0px;
+    left: calc((100% / 2) + 77px + 80px);
+    z-index: 2;
+    transition: opacity 500ms ease-in-out;
+    filter: invert(1);
+    cursor: pointer;
+}

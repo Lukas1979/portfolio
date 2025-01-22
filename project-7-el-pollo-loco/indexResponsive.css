@@ -1,0 +1,65 @@
+@media (max-width: 720px) {
+
+    canvas {
+        width: 100vw;
+    }
+}
+
+@media (max-height: 480px) {
+
+    canvas {
+        height: 100vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 600px),
+(orientation: portrait) and (max-height: 600px) {
+
+    .portrait {
+        display: flex;
+    }
+}
+
+@media (max-height: 400px) {
+
+    .restart-div {
+        scale: 0.9;
+    }
+}
+
+@media (max-height: 350px) {
+
+    .restart-div {
+        scale: 0.8;
+    }
+}
+
+@media (min-height: 480px) {
+
+    .lr-div {
+        bottom: 5%;
+        scale: 1.2;
+    }
+
+    .jb-div {
+        bottom: 5%;
+        scale: 1.2;
+    }
+}
+
+@media (min-height: 660px) {
+
+    .lr-div {
+        bottom: calc(50% - 300px);
+        scale: 1.2;
+    }
+
+    .jb-div {
+        bottom: calc(50% - 300px);
+        scale: 1.2;
+    }
+}
+
+
+
+

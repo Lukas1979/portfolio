@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/kaktus.png" />
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="indexResponsive.css">
+    <script src="models/drawableObject.class.js"></script>
+    <script src="models/movableObject.class.js"></script>
+    <script src="models/throwableObject.class.js"></script>
+    <script src="models/statusBar.class.js"></script>
+    <script src="models/statusBarCoin.class.js"></script>
+    <script src="models/statusBarEndBoss.class.js"></script>
+    <script src="models/statusBarBottle.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/chickenSmall.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/bottleOnGround.class.js"></script>
+    <script src="models/backgroundObject.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/endbossCompletion.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="js/startPage.js"></script>
+    <script src="js/restartGame.js"></script>
+    <script src="js/game.js"></script>
+    <script src="models/worldCompletion.class.js"></script>
+    <script src="models/world.class.js"></script>
+</head>
+
+<body onload="init()" onclick="bodyClicked()">
+
+    <span class="portrait">only horizontal view is supported</span>
+
+    <div class="canvas-outer">
+        <canvas id="canvas" width="720" height="480"></canvas>
+
+        <div class="start">
+            <span onclick="startGame(), stopProp(event)">Start Game</span>
+            <span onclick="keys(), stopProp(event)">Keyboard</span>
+            <span onclick="impressum(), stopProp(event)">Impressum</span>
+
+            <img src="img/cloud.png" class="cloud">
+        </div>
+
+        <div class="sign-div">
+            <img src="img/sign.png" class="sign">
+            <div class="key">
+                <span class="s1">Move left - arrow left</span>
+                <span class="s2">Move right - arrow right</span>
+                <span class="s3">Jump - space</span>
+                <span class="s4">Throw bottle - D</span>
+            </div>
+        </div>
+
+        <div class="window">
+            <img src="img/window.png" alt="">
+
+            <div class="win-text">
+
+                Impressum <br><br>
+                Angaben gemäß § 5 TMG (Telemediengesetz):<br><br>
+
+                Betreiber der Webseite:<br>
+                [Dein Name / Unternehmensname]<br>
+                [Adresse (Straße, Hausnummer, Postleitzahl, Ort)]<br>
+                [Land]<br><br>
+
+                Kontakt: <br>
+                Telefon: [Telefonnummer] <br>
+                E-Mail: [E-Mail-Adresse] <br>
+                Website: [Webadresse] <br><br>
+
+                Vertreten durch: <br>
+                [Name der vertretungsberechtigten Person (z.B. Geschäftsführer)] <br><br>
+
+                Umsatzsteuer-Identifikationsnummer: <br>
+                [USt-IdNr.] (sofern zutreffend) <br><br>
+
+                Handelsregister: <br>
+                [Name des Handelsregisters], [Registernummer] (sofern zutreffend) <br><br>
+
+                Haftungsausschluss: <br>
+                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
+                und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß
+                § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
+                §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
+                fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+                hinweisen. <br><br>
+
+                Urheberrecht: <br>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+                Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+                Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                <br><br>
+
+                https://www.flaticon.com/de/kostenlose-icons/kaktus Kaktus Icons erstellt von Freepik - Flaticon <br>
+                https://pixabay.com/
+
+            </div>
+        </div>
+
+        <div class="restart-div" style="opacity: 0; display: none;">
+
+            <img src="img/restart.png" class="restart">
+
+            <span onclick="restartGameClicked()">Restart - R</span>
+            <span onclick="backToStartPageClicked()">Start Seite - S</span>
+            <span>Menu</span>
+
+        </div>
+
+        <div class="sp-sc">
+            <div class="speaker" onclick="speakerClicked()">
+                <img src="img/board.png">
+                <img src="img/megaphone.png">
+            </div>
+
+            <div class="screen" onclick="fullScreenClicked()">
+                <img src="img/wanted.png">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="lr-div" style="display: none;">
+        <div class="left">
+            <img src="img/button.png" class="left-img">
+        </div>
+        <div class="right">
+            <img src="img/button.png" class="right-img">
+        </div>
+    </div>
+
+    <div class="jb-div" style="display: none;">
+
+        <div class="jump">
+            <img src="img/button.png" class="jump-img">
+        </div>
+
+        <div class="bottle">
+            <div class="throw-bottle-button">
+                <img src="img/wood.png" class="throw-bottle">
+                <img src="img/6_salsa_bottle/salsa_bottle.png" class="bottle-img">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

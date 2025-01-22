@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon_logo_join.png" sizes="32x32">
+
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/register_responsive.css">
+
+    <script src="../script/register.js"></script>
+    <script src="../script/register_2.js"></script>
+</head>
+
+<body onload="registerStart()" class="for-center">
+
+    <span>horizontal view is not supported</span>
+
+    <div class="overlay display-none" id="overlay"></div>
+
+
+    <div class="success-outer">
+        <div class="success for-center" id="success">You Signed Up successfully</div>
+    </div>
+
+
+    <div class="main-div display-none for-center" id="main_div">
+
+
+        <img class="capa-register" src="../assets/img/capa.png" alt="">
+
+
+        <div class="sign-up-outer">
+
+            <div class="register-sign-up-div">
+
+
+                <img class="arrow-left" onclick="returnToLogin()" src="../assets/fonts/arrow_left.png" alt="">
+
+
+                <div class="register-sign-up-form">Sign up
+
+                    <div class="underline-log-in"></div>
+
+                </div>
+
+
+                <div class="register-inputs">
+
+
+                    <form novalidate autocomplete="off" id="register_form" onsubmit="registerSubmit(); return false;">
+
+
+                        <div onclick="focusInput('user')" class="input-outside3" id="input_border1">
+
+                            <input onfocus="inputForUserOnFocus()" class="input" id="user" maxlength="30" type="name"
+                                placeholder="Name" autocomplete="on" />
+                            <img src="../assets/fonts/person.png" alt="">
+
+                        </div>
+
+                        <div onclick="focusInput('email')" class="input-outside" id="input_border2">
+
+                            <input onfocus="inputForEmailOnFocus()" class="input" id="email" maxlength="30" type="email"
+                                placeholder="Email" autocomplete="on" />
+                            <img src="../assets/fonts/mail.png" alt="">
+
+                        </div>
+
+                        <div onclick="focusInput('password')" class="input-outside2" id="input_border3">
+
+                            <input onfocus="inputForPasswordOnFocus()" class="input" id="password" maxlength="30"
+                                type="password" placeholder="Password" autocomplete="off" />
+                            <img src="../assets/fonts/lock.png" alt="">
+
+                        </div>
+
+                        <div onclick="focusInput('confirm_password')" class="input-outside2" id="input_border4">
+
+                            <input onfocus="inputForConfirmPasswordOnFocus()" class="input" id="confirm_password"
+                                maxlength="30" type="password" placeholder="Confirm Password" autocomplete="off" />
+                            <img src="../assets/fonts/lock.png" alt="">
+
+                        </div>
+
+                    </form>
+
+                    <div class="remember-me">
+                        <div class="remember-me-inner">
+                            <input id="rememberMe" class="log-in-checkbox" type="checkbox" style="margin-right: 12px;"
+                                onchange="toggleActivateButton()">
+
+                            <div style="margin-bottom: 1px;">
+                                I accept the
+                                <a href="#" onclick="privacyPolicyClick()" style="margin-left: 2px;">Privacy policy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="valid-name" id="valid_name"></div>
+                    <div class="valid-email" id="valid_email"></div>
+                    <div class="password-notice display-none" id="password_notice"></div>
+
+                </div>
+
+                <button disabled id="register_sign_up_button" form="register_form" class="register-sign-up-button">Sign
+                    up</button>
+
+            </div>
+
+        </div>
+
+        <div class="policy-notice-div">
+
+            <span onclick="privacyPolicyClick()">Privacy Policy</span>
+            <span onclick="legalNoticeClick()">Legal notice</span>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

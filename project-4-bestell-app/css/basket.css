@@ -1,0 +1,198 @@
+.menu-div {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.menu-title {
+    border-bottom: 3px solid #e6e6e6ff;
+    width: 246px;
+}
+
+.accepted-basket {
+    width: 246px;
+}
+
+.menu-div h2 {
+    color: #050505ff;
+    text-align: center;
+}
+
+.basket-logo {
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+}
+
+.basket-logo img {
+    cursor: pointer;
+    height: 28px;
+    margin-bottom: 17px;
+    filter: invert(85%);
+    object-fit: scale-down;
+}
+
+.basket-logo img:hover {
+    scale: 1.1;
+}
+
+.choice {
+    width: -webkit-fill-available;
+    color: #050505ff;
+}
+
+.choice-name {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.choice-cost img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.choice-cost {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.choice-sum {
+    max-height: 79vh;
+    overflow: auto;
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+.sum {
+    border-top: 3px solid #e6e6e6ff;
+    margin-top: 12px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e6e6e6ff;
+}
+
+.sum123 {
+    width: -webkit-fill-available;
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.car img {
+    width: 58px;
+    height: 46px;
+    object-fit: scale-down;
+}
+
+.road img {
+    width: 60px;
+    height: 60px;
+    object-fit: scale-down;
+    transform: rotate(-7deg);
+}
+
+.road {
+    opacity: 0;
+    transform: translateX(-73px);
+    transition: all 0.5s, opacity 0.5s ease-in-out;
+}
+
+.car {
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin-right: -58px;
+}
+
+.road2 {
+    opacity: 1;
+    transform: translateX(-28px);
+}
+
+.car2 {
+    transform: translateX(25px);
+}
+
+.road-car {
+    width: -webkit-fill-available;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-hover {
+    cursor: pointer;
+    scale: 1.04;
+}
+
+.hover-bold {
+    font-weight: bold;
+}
+
+.hover-lighter {
+    font-weight: lighter;
+}
+
+.applyBasket h3 {
+    color: #050505ff;
+    width: max-content;
+}
+
+.applyBasket2 {
+    display: flex;
+    justify-content: center;
+}
+
+.applyBasket {
+
+    border-bottom: 3px solid #e6e6e6ff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 134px;
+    border-left: 3px solid #e6e6e6ff;
+    border-right: 3px solid #e6e6e6ff;
+}
+
+.applyBasket:hover {
+    background-color: #ffe6ccff;
+}
+
+.minus-plus {
+    border-radius: 50%;
+    border: 2px solid #ffffffff;
+}
+
+.minus-plus:hover {
+    border: 2px solid #fc8200ff;
+}
+
+.trash:hover {
+    scale: 1.27;
+}
+
+.emptyBasket {
+    color: #97999cff;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: lighter;
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.delivery-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+

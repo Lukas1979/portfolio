@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoGram</title>
+    <link rel="icon" type="image/x-icon" href="favicon_fotogram.png">
+
+    <link rel="stylesheet" href="fotogram.css">
+    <link rel="stylesheet" href="fotogram_responsive.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadFotos()">
+
+    <header>
+
+        <img src="logo_fotogram.svg" alt="" class="fotogram-ikon">
+
+    </header>
+
+    <div class="div-center">
+
+        <div class="titel">YOUR PERSONAL PHOTO ALBUM</div>
+
+
+        <div class="fotos" id="fotos">
+        </div>
+
+    </div>
+
+
+    <div id="dimm" class="dimm d-none"></div>
+    <div id="fenster1" class="fenster1 d-none" onclick="back()">
+        <div onclick="func1(event);" class="fenster2" id="fenster2">
+        </div>
+    </div>
+
+
+    <footer>
+        <img src="crown_12.png" alt="" class="footer-img">
+    </footer>
+
+
+</body>
+
+<script src="fotogram.js"></script>
+
+
+</html>

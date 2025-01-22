@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon_logo_join.png" sizes="32x32">
+
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/login_responsive.css">
+    
+    <script src="../script/login.js"></script>
+</head>
+
+<body onload="loginStart()">
+
+    <span>horizontal view is not supported</span>
+    
+    <div class="main-login display-none" id="main_div">
+
+        <img class="capa-login" src="../assets/img/capa.png" alt="">
+
+        <div class="sign-up-div">
+
+            Not a Join User?
+            <div class="sign-up-button for-center" onclick="toRegister()">Sign up</div>
+
+        </div>
+
+        <div class="login-div">
+            <span>
+                Log in
+
+                <div class="underline-log-in"></div>
+            </span>
+
+            <div class="input-div">
+
+                <form novalidate autocomplete="off" id="login_form" onsubmit="loginSubmit(); return false;">
+
+                    <div>
+
+                        <div class="input-outside" id="input_outside1" onclick="focusInput('email')">
+                            <input onfocus="inputIsOnFocus()" class="input" id="email" maxlength="30" type="email" placeholder="Email"
+                                autocomplete="on" />
+                            <img src="../assets/fonts/mail.png" alt="">
+                        </div>
+
+                        <div class="input-outside2" id="input_outside2" onclick="focusInput('password')">
+                            <input onfocus="inputIsOnFocus(), deleteContent(this)" class="input" id="password" maxlength="30" type="password" placeholder="Password"
+                                autocomplete="on" />
+                            <img src="../assets/fonts/lock.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="remember-me">
+                        <div class="remember-me-inner"><input id="rememberMe" class="log-in-checkbox" maxlength="30" type="checkbox"
+                                style="margin-right: 12px;">
+
+                            <div style="margin-bottom: 1px;">
+                                Remember me
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="password-notice-login display-none" id="password_notice">Check your email and password. Please try again.</div>
+
+            </div>
+
+            <div class="buttons-login-div">
+
+                <button class="log-in-button" form="login_form">Log in</button>
+
+                <button onclick="guestLoginStart()" class="guest-log-in-button">Guest Log in</button>
+
+            </div>
+        </div>
+
+        <div class="policy-notice-div">
+
+            <span onclick="privacyPolicyClick()">Privacy Policy</span>
+            <span onclick="legalNoticeClick()">Legal notice</span>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

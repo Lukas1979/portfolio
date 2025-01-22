@@ -1,0 +1,122 @@
+@media (max-width: 447px) {
+
+    .category-food {
+
+        font-size: 14px;
+    }
+
+    .category-food img {
+        width: 37px;
+        height: 37px;
+    }
+
+    .logo img {
+        height: 72px;
+        width: 72px;
+    }
+
+    .logo-header {
+        height: 48px;
+    }
+
+    header,
+    footer {
+        height: 67px;
+    }
+
+    .basket-header img {
+        height: 34px;
+        width: 34px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .our-menu {
+        display: none;
+    }
+
+    .category-food h3 {
+        margin-left: 19px;
+    }
+
+    .eat-div {
+        font-size: 15px;
+    }
+}
+
+/* -------------------------------------- basket ------------------------------- */
+
+@media (min-width: 708.1px) {
+
+    .menu-div {
+        display: block;
+    }
+}
+
+@media (max-width: 708px) {
+
+    .basket-logo img {
+        height: 46px;
+    }
+
+    .basket-header {
+        cursor: pointer;
+    }
+
+    .arrow-header {
+        width: 64px;
+    }
+
+    .content-menu {
+        display: flex;
+    }
+
+    .menu-div {
+        position: fixed;
+        background: white;
+        width: -webkit-fill-available;
+        z-index: 1;
+    }
+
+    .menu-title {
+        width: -webkit-fill-available;
+    }
+
+    .accepted-basket {
+        width: -webkit-fill-available;
+    }
+
+    .sum123 {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+
+/* --------------- */
+
+
+@media (max-height: 730px) {
+
+    .choice-sum {
+        max-height: 69vh;
+    }
+}
+
+@media (max-height: 550px) {
+
+    .choice-sum {
+        max-height: 56vh;
+    }
+}
+
+/* ------------------ */
+
+@media (min-width: 1536px) {
+
+    .menu-div {
+
+        border-right: 3px solid #e6e6e6ff;
+    }
+}

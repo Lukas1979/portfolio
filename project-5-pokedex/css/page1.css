@@ -1,0 +1,129 @@
+
+.section1-outside {
+    padding-left: calc((100% - 1488px) / 2);
+    padding-right: calc((100% - 1488px) / 2);
+}
+
+.section1 {
+    height: 410px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 60px;
+    justify-content: center;
+    overflow-y: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    scrollbar-color: #0d3dffff #082129ff;
+}
+
+.card40 {
+    height: 153px;
+    width: 133px;
+    border-radius: 12px;
+    color: #efedf2ff;
+    font-size: 17px;
+    box-shadow: 0 0 8px 4px #00fffc;
+}
+
+.card40.hover-enabled:hover {
+    box-shadow: 0 0 8px 4px #3a35df;
+    cursor: pointer;
+
+    .card-img-page1 {
+        scale: 1.3;
+        transform: rotate(360deg);
+    }
+}
+
+.card-img-page1 {
+    object-fit: scale-down;
+    width: 70px;
+    transition: scale 1000ms ease, transform 500ms ease;
+}
+
+.card40-1 {
+    background-color: #082129ff;
+    height: 26px;
+    width: 100%;
+    border-radius: 12px 12px 0 0px;
+
+}
+
+.id-Pokemon-Page1 {
+    display: flex;
+    width: 100%;
+    margin-left: 17px;
+    transform: translateY(-4px);
+}
+
+.card40-2 {
+    height: 92px;
+    width: 100%;
+}
+
+.card40-3 {
+    background-color: #082129ff;
+    height: 35px;
+    width: 100%;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.card40-3 img {
+    height: 12px;
+    width: 40px;
+    margin-top: 4px;
+}
+
+
+.card40-1-name {
+    text-align: center;
+    transform: translateY(3px);
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.arrow img {
+    width: 85px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.arrow {
+    margin-top: 4px;
+}
+
+.arrow20 {
+    transition: scale 100ms ease-in-out;
+}
+
+.arrow20:hover {
+    filter: grayscale(1);
+    scale: 1.1;
+}
+
+.arrow:hover {
+    filter: invert(1);
+}
+
+.arrow2:hover {
+    filter: invert(1);
+}
+
+.arrow20 img {
+    object-fit: scale-down;
+    width: 34px;
+    cursor: pointer;
+}
