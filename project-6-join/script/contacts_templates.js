@@ -75,20 +75,20 @@ function showEditMenu(contact) {
             <div class="input-fields i-f-m" id="ContactForm">
   
                 <div class="input-outside" onclick="focusInput('edit-name')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="name" maxlength="30" type="text" placeholder="Name" autocomplete="on" value="${contact.name}" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="name" maxlength="18" type="text" placeholder="Name" autocomplete="on" value="${contact.name}" />
                     <img src="../assets/icons/contacts_edit_person.svg" alt="">
                 </div>
                 <div id="name-warning" class="name-warning"></div>
   
                 <div class="input-outside" onclick="focusInput('edit-email')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="email" maxlength="30" type="email" placeholder="Email" autocomplete="on" value="${contact.email}" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="email" maxlength="26" type="email" placeholder="Email" autocomplete="on" value="${contact.email}" />
                     <img src="../assets/icons/contacts_edit_mail.svg" alt="">
                 </div>
                 <div class="mail-warning"></div>
   
   
                 <div class="input-outside2" onclick="focusInput('edit-phone')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="phone" maxlength="30" type="tel" placeholder="Phone" autocomplete="on" value="${phoneNumber}" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this)" class="input" id="phone" maxlength="15" type="tel" placeholder="Phone" autocomplete="on" value="${phoneNumber}" />
                     <img src="../assets/icons/contacts_edit_call.svg" alt="">
                 </div>
                 <div class="phone-warning"></div>
@@ -119,19 +119,19 @@ function showCreateMenu() {
             <div class="input-fields2" id="ContactForm">
 
                 <div class="input-outside" onclick="focusInput('name')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.name-warning')" class="input" id="name" maxlength="20" type="text" placeholder="Name" autocomplete="on" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.name-warning')" class="input" id="name" maxlength="18" type="text" placeholder="Name" autocomplete="on" />
                     <img src="../assets/icons/contacts_edit_person.svg" alt="">
                 </div>
                 <div id="name-warning" class="name-warning"></div>
 
                 <div class="input-outside" onclick="focusInput('email')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.mail-warning')" class="input" id="email" maxlength="20" type="text" placeholder="Email" autocomplete="on" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.mail-warning')" class="input" id="email" maxlength="26" type="text" placeholder="Email" autocomplete="on" />
                     <img src="../assets/icons/contacts_edit_mail.svg" alt="">
                 </div>
                 <div class="mail-warning"></div>
 
                 <div class="input-outside2" onclick="focusInput('phone')">
-                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.phone-warning')" class="input" id="phone" maxlength="20" type="tel" placeholder="Phone" autocomplete="on" />
+                    <input onblur="editInputOnblur(this)" onfocus="editInputOnfocus(this), hideTextWarning('.phone-warning')" class="input" id="phone" maxlength="15" type="tel" placeholder="Phone" autocomplete="on" />
                     <img src="../assets/icons/contacts_edit_call.svg" alt="">
                 </div>
                 <div class="phone-warning"></div>

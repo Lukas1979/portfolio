@@ -194,7 +194,7 @@ function eventListener() {
     eventListener2();
     eventListener3();
     eventListener4();
-    document.body.addEventListener('contextmenu', (e) => e.preventDefault());
+    //document.body.addEventListener('contextmenu', (e) => e.preventDefault());
 }
 
 

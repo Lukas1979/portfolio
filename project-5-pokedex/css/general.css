@@ -19,12 +19,25 @@ footer {
     background-color: #082129ff;
     height: 70px;
     z-index: 5;
+    position: relative;
 }
 
 footer img {
     height: 186px;
     width: 30px;
     transform: rotate(90deg);
+}
+
+footer span {
+    color: #c0bdc4;
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    transition: scale 125ms ease-in-out;
+}
+
+footer span:hover {
+    scale: 1.1;
 }
 
 header {
@@ -86,7 +99,8 @@ header span {
 
 .hide-pokemon {
     top: -18px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
+    height: 100%;
     width: 100%;
     background: #0d191fff;
     position: absolute;

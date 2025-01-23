@@ -230,6 +230,7 @@ function openEditDialog(contactStr) {
 function showDialog() {
 
   document.getElementById('dialog_outer').classList.add('show-overlay-menu');
+  document.getElementById('user-nav').classList.remove('u-i-m-sh-m');
 }
 
 

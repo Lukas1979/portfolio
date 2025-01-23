@@ -65,7 +65,7 @@ class Chicken extends MovableObject {
 
         setTimeout(() => {
             this.chick1 = setInterval(() => {
-                if (world.character.gameStarted) {
+                if (world && world.character && world.character.gameStarted) {
                     if (this.x < -1000) this.isDead = true;
                     if (!this.blockMove) this.moveLeft();
                     if (this.isDead) {
