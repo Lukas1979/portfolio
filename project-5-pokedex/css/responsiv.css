@@ -161,18 +161,18 @@
 
 @media (max-width: 406px) {
 
-    :root {
+    /* :root {
         --tranZ: 220px;
-    }
+    } */
 
-    .carousel-inner .card {
+    /* .carousel-inner .card {
         width: 100px;
         height: 150px;
-    }
+    } */
 
-    .carousel {
+    /* .carousel {
         width: 105px;
-    }
+    } */
 
     .area1 {
         scale: 0.8;
@@ -191,7 +191,7 @@
 
 @media (max-width: 360px) {
 
-    :root {
+    /* :root {
         --tranZ: 200px;
     }
 
@@ -202,7 +202,7 @@
 
     .carousel {
         width: 100px;
-    }
+    } */
 }
 
 /*-----------------------------------*/
