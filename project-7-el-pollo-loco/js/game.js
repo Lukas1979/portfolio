@@ -172,14 +172,7 @@ function showMobileButtons() {
  */
 function isMobileBrowser() {
 
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    const isMobileDevice = /Mobi|Android|iPhone|iPod|Opera Mini|IEMobile/i.test(userAgent);
-    const isIpad = /iPad|Macintosh/i.test(userAgent) && ('ontouchend' in document);
-    const isTabletDevice = /Tablet|Nexus 7|Nexus 9|SM-T|KFAPWI|Kindle Fire/i.test(userAgent);
-    const isAppleTablet = (navigator.platform === 'MacIntel' && 'ontouchend' in document);
-    const screenWidth = window.innerWidth || document.documentElement.clientWidth;
-    const isSmallScreen = screenWidth <= 1024;
-    return (isMobileDevice || isIpad || isTabletDevice || isAppleTablet) && isSmallScreen;
+    return mobileNow;
 }
 
 

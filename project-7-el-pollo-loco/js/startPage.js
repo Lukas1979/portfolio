@@ -8,6 +8,8 @@ let stormSound = new Audio('audio/storm.mp3');
 let keyPressSound = new Audio('audio/keyPress.mp3');
 let doorSound = new Audio('audio/door.mp3');
 
+let mobileNow = false;
+document.addEventListener('touchstart', () => { mobileNow = true });
 
 /**
  * 
