@@ -140,7 +140,7 @@ function showCreateMenu() {
         </div>
         <div class="buttons2">
             <div class="button-settings">
-                <button type="button" onclick="resetInputFields()" class="cancel-button">Cancel
+                <button type="button" onclick="resetInputFields()" class="cancel-button">Clear
                     <img class="cancel2" src="../assets/icons/contacts_add_contact_cancel.svg">
                 </button>
                 <button type="submit" class="create-button">Create contact

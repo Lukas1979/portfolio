@@ -18,12 +18,14 @@ async function refreshContacts() {
  * 
  */
 function resetInputFields() {
-    document.getElementById("name").value = '';
-    document.getElementById("email").value = '';
-    document.getElementById("phone").value = '';
-    document.querySelector(".name-warning").textContent = "";
-    document.querySelector(".mail-warning").textContent = "";
-    document.querySelector(".phone-warning").textContent = "";
+    if (document.getElementById("name").value != '' || document.getElementById("email").value != '' || document.getElementById("phone").value != '' ) {
+        document.getElementById("name").value = '';
+        document.getElementById("email").value = '';
+        document.getElementById("phone").value = '';
+        document.querySelector(".name-warning").textContent = "";
+        document.querySelector(".mail-warning").textContent = "";
+        document.querySelector(".phone-warning").textContent = "";
+    } else closeDialog();
 }
 
 
